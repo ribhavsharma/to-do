@@ -35,4 +35,4 @@ I started this process by using the `create-react-app` boilerplate, and then ins
 
 One of the main challenges I ran into was understanding how states work, and how and when to use them. However, during the course of this project, I believe that I have developed a fair understanding of the same. A really interesting thing I came across while building this project was CSS modules. I had seen people use Styled Components in the past, but using CSS modules is just a lot simpler and easier to the eyes.
 
-At the end of the day, the technologies implemented in this project are React, JSX and CSS I chose to use the `create-react-app` boilerplate to minimize the time that goes into the initial setup.
+At the end of the day, the technologies implemented in this project are React, JSX and CSS. I chose to use the `create-react-app` boilerplate to minimize the time that goes into the initial setup.
