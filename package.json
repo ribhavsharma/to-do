@@ -1,5 +1,6 @@
 {
-  "name": "first-try",
+  "name": "to-do",
+  "description": "a simple to-do app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
