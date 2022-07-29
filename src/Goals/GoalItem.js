@@ -1,21 +1,18 @@
-import './GoalItem.css'
-import Card from '../UI/Card'
+import styles from "./GoalItem.module.css";
+import Card from "../UI/Card";
 
-const GoalItem = (props) =>{
+const GoalItem = (props) => {
+  const deleteHandler = () => {
+    props.onDelete(props.id);
+  };
 
-    const deleteHandler = () => {
-      console.log('helo');
-      props.onDelete(props.id)
-    }
+  return (
+    <div onClick={deleteHandler}>
+      <Card className={styles["goal-item"]}>
+        <p>{props.text}</p>
+      </Card>
+    </div>
+  );
+};
 
-    return(
-        <div onClick={deleteHandler}>
-        <Card className='goal-item'>
-            <p>{props.text}</p>
-        </Card>
-        </div>
-        
-    )
-}
-
-export default GoalItem
+export default GoalItem;

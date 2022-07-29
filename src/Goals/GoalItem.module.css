@@ -1,0 +1,10 @@
+.goal-item {
+  padding: 0.5rem;
+  margin: 1rem 0;
+  background-color: #ac0e77;
+}
+
+.goal-item p {
+  padding: 0.5rem;
+  color: white;
+}

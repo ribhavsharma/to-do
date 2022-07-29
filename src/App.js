@@ -1,6 +1,6 @@
 import GoalsList from "./Goals/GoalsList";
 import NewGoal from "./NewGoal/NewGoal";
-import "./App.css";
+import styles from "./App.module.css";
 import { useState } from "react";
 
 function App() {
@@ -25,15 +25,11 @@ function App() {
 
   return (
     <div>
-      <section id="goal-form">
+      <section className={styles["goal-form"]}>
         <NewGoal onSave={addGoalHandler} />
       </section>
-      <section id="goals">
-        <GoalsList
-          items={courseGoals}
-          id="goals"
-          appDelete={appDeleteHandler}
-        ></GoalsList>
+      <section className={styles["goals"]}>
+        <GoalsList items={courseGoals} appDelete={appDeleteHandler}></GoalsList>
       </section>
     </div>
   );
